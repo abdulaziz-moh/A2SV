@@ -1,3 +1,6 @@
+import math
+
+
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
         left = 0
