@@ -58,3 +58,20 @@ obj.partitionLabels(s)
 #             if right == length -1:
 #                 break 
 #         return ans
+
+
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        htable = {}
+        newnum = list(nums) 
+        sorted_nums = sorted(nums)
+        length = len(sorted_nums)
+        count = 0
+        x = sorted_nums[0]
+        for v in sorted_nums:
+            if v == x:
+                htable[v] = count
+            else:
+                x = v
+                count += 1
+                htable[v] = count
