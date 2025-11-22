@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
         # this question preferes the counter sort way
@@ -22,3 +25,29 @@ class Solution:
                     x += 1
         return arr1
     
+# my second submission 
+class Solution:
+    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+        hm = {}
+        for v in arr1:
+            if v in hm:
+                hm[v] += 1
+            else:
+                hm[v] = 1
+        i = 0
+        for v in arr2:
+            while hm[v] > 0:
+                arr1[i] = v
+                hm[v] -= 1
+                i += 1
+            del hm[v]
+        rem = []
+        for key in hm.keys():
+            rem.append(key)
+        rem.sort()
+        for v in rem:
+            while hm[v] > 0:
+                arr1[i] = v
+                hm[v] -= 1
+                i += 1
+        return arr1
