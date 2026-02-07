@@ -1,4 +1,4 @@
-arr = [1,2,None]
-for v in arr:
-    if v:
-        print(v)
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    
