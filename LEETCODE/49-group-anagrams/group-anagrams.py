@@ -4,11 +4,6 @@ class Solution:
         sortedstr = []
         dd = defaultdict(list)
         for v in strs:
-            sortedstr.append(str(sorted(v)))
-        n = len(strs)
-        for i in range(n):
-            dd[sortedstr[i]].append(strs[i])
-        ans = []
-        for v in dd:
-            ans.append(dd[v])
-        return ans
+            dd[str(sorted(v))].append(v)
+        
+        return list(dd.values())
