@@ -5,9 +5,18 @@ class Solution:
         for i in range(n):
             hm[heights[i]] = names[i]
         
+        # for i in range(1,n):
+        #     for j in range(n-i):
+        #         if heights[j] < heights[j + 1]:
+        #             heights[j],  heights[j + 1] = heights[j + 1], heights[j]
+        # return [hm[heights[i]] for i in range(n)]
+
         for i in range(1,n):
-            for j in range(n-i):
-                if heights[j] < heights[j + 1]:
-                    heights[j],  heights[j + 1] = heights[j + 1], heights[j]
+            for j in range(i,0,-1):
+                if heights[j] > heights[j-1]:
+                   heights[j] , heights[j-1] = heights[j-1], heights[j] 
+                else:
+                    break
         return [hm[heights[i]] for i in range(n)]
                 
+        
