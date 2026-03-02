@@ -6,6 +6,7 @@ for _ in range(t):
     n, k = map(int,input().split())
     a = list(map(int,input().split()))
     
+    a.sort()
     hm = Counter(a)
     arr = []
     for key,v in hm.items():
