@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium
 
-**Problem:** [Continuous-Subarray-Sum](https://leetcode.com/problems/continuous-subarray-sum)
+**Problem:** [Continuous-Subarray-Sum](https://leetcode.com/problems/continuous-subarray-sum/)
 
 ---
 
