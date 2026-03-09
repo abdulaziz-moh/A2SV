@@ -10,9 +10,7 @@ class Solution:
                     stack.pop()
                 else:
                     return False
-        if stack:
-            return False
-        return True
+        return stack == []
                 
 
 
