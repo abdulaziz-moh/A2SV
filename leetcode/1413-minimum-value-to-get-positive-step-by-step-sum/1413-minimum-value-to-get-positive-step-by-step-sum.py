@@ -6,4 +6,3 @@ class Solution:
             mn = min(mn, prefix)
         ans = 1-mn
         return ans if ans > 0 else 1
-        

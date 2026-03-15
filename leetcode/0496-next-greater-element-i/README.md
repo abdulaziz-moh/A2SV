@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy
 
-**Problem:** [Next-Greater-Element-I](https://leetcode.com/problems/next-greater-element-i)
+**Problem:** [Next-Greater-Element-I](https://leetcode.com/problems/next-greater-element-i/)
 
 ---
 

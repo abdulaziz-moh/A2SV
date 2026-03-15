@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium
 
-**Problem:** [Maximum-Sum-Obtained-of-Any-Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation)
+**Problem:** [Maximum-Sum-Obtained-of-Any-Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/)
 
 ---
 

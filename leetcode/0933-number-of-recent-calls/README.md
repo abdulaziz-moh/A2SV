@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy
 
-**Problem:** [Number-of-Recent-Calls](https://leetcode.com/problems/number-of-recent-calls)
+**Problem:** [Number-of-Recent-Calls](https://leetcode.com/problems/number-of-recent-calls/)
 
 ---
 

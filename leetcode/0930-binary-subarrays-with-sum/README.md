@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium
 
-**Problem:** [Binary-Subarrays-With-Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
+**Problem:** [Binary-Subarrays-With-Sum](https://leetcode.com/problems/binary-subarrays-with-sum/)
 
 ---
 

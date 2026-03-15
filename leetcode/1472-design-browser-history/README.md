@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium
 
-**Problem:** [Design-Browser-History](https://leetcode.com/problems/design-browser-history)
+**Problem:** [Design-Browser-History](https://leetcode.com/problems/design-browser-history/)
 
 ---
 

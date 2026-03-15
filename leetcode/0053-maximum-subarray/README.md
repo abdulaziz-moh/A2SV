@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium
 
-**Problem:** [Maximum-Subarray](https://leetcode.com/problems/maximum-subarray)
+**Problem:** [Maximum-Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 ---
 

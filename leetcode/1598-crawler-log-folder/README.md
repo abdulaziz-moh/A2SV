@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy
 
-**Problem:** [Crawler-Log-Folder](https://leetcode.com/problems/crawler-log-folder)
+**Problem:** [Crawler-Log-Folder](https://leetcode.com/problems/crawler-log-folder/)
 
 ---
 

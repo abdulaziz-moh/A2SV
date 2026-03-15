@@ -9,4 +9,3 @@ class Solution:
             ans = max(ans,v-mn)
             mn = min(mn,v)
         return ans
-        

@@ -19,5 +19,3 @@ class Solution:
                     l2 += 1
                 right += 1
         return count
-                 
-            
