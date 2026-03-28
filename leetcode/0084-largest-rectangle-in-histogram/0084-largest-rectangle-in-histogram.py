@@ -19,8 +19,6 @@ class Solution:
             while stack and heights[stack[-1]] > heights[idx]:
                 hmb[stack.pop()] = idx
             stack.append(idx)
-        print(hmf)
-        print(hmb)
 
         ans = -1
         for idx in range(n):
