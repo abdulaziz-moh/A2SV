@@ -10,10 +10,9 @@ class Solution:
                 hmf[stack.pop()] = idx
             stack.append(idx)
         
-                # hm = {idx: -1 for idx in range(n)}
 
         hmb = {idx: -1 for idx in range(n)}
-        stack = []  # store index, monotonic increasing stack to get smaller(next smaller)
+        stack = []  # store index, monotonic increasing stack to get smaller(next smaller) but for the reversed array
         for idx in range(n-1,-1,-1):
 
             while stack and heights[stack[-1]] > heights[idx]:
