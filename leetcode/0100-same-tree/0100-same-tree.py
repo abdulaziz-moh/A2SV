@@ -7,7 +7,6 @@
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         
-        status = True
         def traverse(p,q):
             if not p and not q:
                 return True
