@@ -5,23 +5,21 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def __init__(self):
-        self.ans = []
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         
-        def dfs(root, sm, temp):
+        def dfs(root, sm, temp, ans):
             if not root:
-                return
+                return []
             sm += root.val
             temp.append(root.val)
-            # print(temp)
-            # print(sm)
+
             if not root.left and not root.right:
                 if sm == targetSum:
-                    self.ans.append(temp[:])
-            dfs(root.left, sm, temp[:])
-            dfs(root.right, sm, temp[:])
-            return
-        dfs(root, 0, [])
-        return self.ans
-                
+                    ans.append(temp[:])
+                    return ans
+            dfs(root.left, sm, temp[:], ans)
+            dfs(root.right, sm, temp[:], ans)
+
+            return ans
+        
+        return dfs(root, 0, [], [])
