@@ -29,17 +29,10 @@ class Solution:
                 return
             
             val = k - rt.val
-            # print(val, " ", k)
-            # if val * 2 != k:
-                # print(val)
-                # return
             if val * 2 != k:
-                # print(val, " - ", k)
                 status = False
                 bst(root, val)
-                # print(val,": ", status)
                 if status:
-                    # print(val)
                     ans = True
                     return
             dfs(rt.left)
