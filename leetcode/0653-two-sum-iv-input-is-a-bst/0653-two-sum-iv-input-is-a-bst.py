@@ -13,21 +13,12 @@ class Solution:
             val = root.val
             return num == val or (bst(root.left, num) if num < val else bst(root.right, num))
 
-        ans = False
         def dfs(rt):
-            nonlocal ans
             if not rt:
-                return
+                return False
             
             val = k - rt.val
-            if val * 2 != k:
-                if bst(root, val):
-                    ans = True
-                    return
-            dfs(rt.left)
-            dfs(rt.right)
-            return 
-        dfs(root)
-        return ans
+            return (val * 2 != k and bst(root, val)) or dfs(rt.left) or dfs(rt.right)
+        return dfs(root)
             
             
