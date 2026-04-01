@@ -7,32 +7,21 @@
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         
-        status = False
         def bst(root, num):
-            nonlocal status
             if not root:
-                return
+                return False
             val = root.val
-            if num == val:
-                status = True
-                return
-            elif num < val:
-                bst(root.left, num)
-            else:
-                bst(root.right, num)
-            return
+            return num == val or (bst(root.left, num) if num < val else bst(root.right, num))
 
         ans = False
         def dfs(rt):
-            nonlocal ans, status
+            nonlocal ans
             if not rt:
                 return
             
             val = k - rt.val
             if val * 2 != k:
-                status = False
-                bst(root, val)
-                if status:
+                if bst(root, val):
                     ans = True
                     return
             dfs(rt.left)
